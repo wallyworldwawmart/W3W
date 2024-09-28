@@ -1,0 +1,7 @@
+curl --request POST  
+
+    --url https://api.cloudflare.com/client/v4/accounts/b0aef0b130e799b83bf2122677a92e66/request-tracer/tracer     --header 'Content-Type: application/json'  
+
+    --header 'Authorization: Bearer $CF_AUTH_TOKEN'  
+
+    --data '{"url":"https://WawMart.com","method":"POST"}'

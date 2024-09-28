@@ -1,0 +1,8 @@
+curl -u 'HTdauSjqXyes5LbxLO5GZw':''  \
+  -X POST -H "Content-type: application/json" \
+  -d '{"badge_template_id":"13034728-bb90-473b-ba8a-97b4fab04420",
+       "issued_at":"2019-03-22T00:00:00-04:00",
+       "issued_to_first_name":"test",
+       "issued_to_last_name":"bunny",
+       "recipient_email":"user@example.com"}' \
+  https://api.credly.com/v1/organizations/08bcedcd-3f67-40e9-b857-1ed8e0a80d6d/badges

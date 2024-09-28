@@ -1,0 +1,49 @@
+<?php
+use \Firebase\JWT\JWT;
+ 
+# Generate a private key to sign the token.
+# The public key would need to be published at the authorization
+# server if a separate resource server needs to validate the JWT
+ 
+$private_key = openssl_pkey_new([
+  'digest_alg' => 'sha256',
+  'private_key_bits' => 1024,
+  'private_key_type' => OPENSSL_KEYTYPE_RSA
+]);
+ 
+# Set the user ID of the user this token is for
+$user_id = "1000";
+ 
+# Set the client ID of the app that is generating this token
+$client_id = 'https://example-app.com';
+ 
+# Provide the list of scopes this token is valid for
+$scope = 'read write';
+ 
+$token_data = array(
+ 
+  # Issuer (the authorization server identifier)
+  'iss' => 'https://' . $_SERVER['PHP_SELF'],
+ 
+  # Expires At
+  'exp' => time()+7200, // Valid for 2 hours
+ 
+  # Audience (The identifier of the resource server)
+  'aud' => 'api://default',
+ 
+  # Subject (The user ID)
+  'sub' => $user_id,
+ 
+  # Client ID
+  'client_id' => $client_id,
+ 
+  # Issued At
+  'iat' => time(),
+ 
+  # Identifier of this token
+  'jti' => microtime(true).'.'.bin2hex(random_bytes(10)),
+ 
+  # The list of OAuth scopes this token includes
+  'scope' => $scope
+);
+$token_string = JWT::encode($token_data, $private_key, 'RS256');

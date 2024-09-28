@@ -1,0 +1,10 @@
+<key>ElectronAsarIntegrity</key>
+<dict>
+  <key>Resources/app.asar</key>
+  <dict>
+    <key>algorithm</key>
+    <string>SHA256</string>
+    <key>hash</key>
+    <string>9d1f61ea03c4bb62b4416387a521101b81151da0cfbe18c9f8c8b818c5cebfac</string>
+  </dict>
+</dict>

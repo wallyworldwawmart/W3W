@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>1_0</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>1_0</h1>
+  <div id="test"></div>
+
+  <script src="img/phaser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

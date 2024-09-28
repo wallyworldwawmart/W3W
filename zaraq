@@ -1,0 +1,11 @@
+const { system, client } = await request.json()
+
+/* System parameters */
+system.page.url.href // URL of the current page
+system.page.query.gclid // Value of the gclid query parameter
+system.device.resolution // Device screen resolution
+system.device.language // Browser preferred language
+
+/* Zaraz Track values */
+client.value // value from `zaraz.track("foo", {value: "bar"})`
+client.products[0].name // name of the first product in an ecommerce call

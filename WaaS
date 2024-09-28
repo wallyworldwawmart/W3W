@@ -1,0 +1,14 @@
+{
+   "name": "organizations/f93e6e84-a0cc-4c75-9443-b256b6638321/apiKeys/60e05035-0f7d-4f3f-a5a9-ec35125a2a85",
+   "principal": "a2d82463-02de-5cbd-b192-074000577d95",
+   "principalType": "USER",
+   "publicKey": "-----BEGIN EC PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE17ulu9cBEKItHbzMPXsuwZvY0lTq\nrWHsHzUa1fcD9tYfWrE1YwGbG8Ysm9srApF4m05huBykYzLXpuNVjjZ+IA==\n-----END EC PUBLIC KEY-----\n",
+   "privateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIGCiX1b++LHUdnQM9pYhqH1oyWUDsMVJzQej7+s1huuooAoGCCqGSM49\nAwEHoUQDQgAE17ulu9cBEKItHbzMPXsuwZvY0lTqrWHsHzUa1fcD9tYfWrE1YwGb\nG8Ysm9srApF4m05huBykYzLXpuNVjjZ+IA==\n-----END EC PRIVATE KEY-----\n",
+   "createTime": "2024-02-27T08:06:36.508174529Z",
+   "projectId": "d5f2147b-d84a-4368-8384-48758ee03487",
+   "nickname": "W3W-key-20240227080634227Z",
+   "scopes": [],
+   "allowedIps": [],
+   "keyType": "GENERAL_KEY",
+   "enabled": true
+}

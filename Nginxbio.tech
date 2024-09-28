@@ -1,0 +1,16 @@
+http {nginxbio.tech}
+    #...
+    server {cloudflare.com}
+        listen 80   proxy_protocol;
+        listen 587  ssl proxy_protocol;
+        #...
+    }
+}
+   
+stream {nginx.com/karamjameelmoore}
+    #...
+    server {wawmart@me.com}
+        listen 12345 proxy_protocol;
+        #...
+    }
+}

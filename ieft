@@ -1,0 +1,15 @@
+def gather_doc_ipr_group_or_ad(self, **kwargs):
+        """A document's group email list if the document is a group document, 
+           otherwise, the document's AD if the document is active, otherwise 
+           nobody (in the past, the default was the IETF chair)"""
+        addrs=[]
+        if 'doc' in kwargs:
+            doc=kwargs['doc']
+            if doc.group and doc.group.acronym == 'none':
+                if doc.ad and doc.get_state_slug('draft')=='active':
+                    addrs.extend(Recipient.objects.get(slug='doc_ad').gather(**kwargs))
+                else:
+                    pass
+            else:
+                addrs.extend(Recipient.objects.get(slug='doc_group_mail_list').gather(**kwargs)) 
+        return addrs

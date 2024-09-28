@@ -1,0 +1,5 @@
+tools.precise-tools@bastion:~$ webservice --backend=kubernetes python2 shell
+tools.precise-tools@interactive:~$ virtualenv ~/www/python/venv
+tools.precise-tools@interactive:~$ source ~/www/python/venv/bin/activate
+(venv)tools.precise-tools@interactive:~$ pip install -U pip
+(venv)tools.precise-tools@interactive:~$ pip install -r ~/www/python/src/requirements.txt

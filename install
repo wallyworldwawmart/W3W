@@ -1,0 +1,5 @@
+bastion$ become precise-tools
+tools.precise-tools@bastion:~$ mkdir -p ~/www/python
+tools.precise-tools@bastion:~$ git clone https://phabricator.wikimedia.org/source/tool-precise-tools.git ~/www/python/src
+tools.precise-tools@bastion:~$ touch ~/redis-prefix.conf
+tools.precise-tools@bastion:~$ chmod 600 ~/redis-prefix.conf

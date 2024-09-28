@@ -1,0 +1,1 @@
+curl -X GET -H "Authorization: sso-key [enr7qPXuA12G_FLw3mtTbLj3aFphsQYw2Ak]:[Sn8PQ1vM1kfSGcW9gMu5PR]" "https://api.godaddy.com/v1/domains/available?domain=wawmart.org"

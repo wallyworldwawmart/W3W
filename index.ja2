@@ -1,0 +1,20 @@
+import { Ai } from './vendor/@cloudflare/ai.js';
+
+
+export default {
+  async fetch(request, env) {
+    const imageResponse = await fetch('https://cataas.com/cat');
+    const blob = await imageResponse.arrayBuffer();
+
+
+    const ai = new Ai(env.AI);
+    const inputs = {
+      image: [...new Uint8Array(blob)]
+    };
+
+
+    const response = await ai.run('@cf/microsoft/resnet-50', inputs);
+    return Response.json({ inputs: { image: [] }, response });
+  }
+};
+

@@ -1,0 +1,21 @@
+import { Ai } from './vendor/@cloudflare/ai.js';
+
+
+export default {
+  async fetch(request, env) {
+    const ai = new Ai(env.AI);
+    const batchedInput = {
+      text: ['Tell me a joke about Cloudflare', 'The weather is sunny']
+    };
+    const batchedResponse = await ai.run(
+      '@cf/baai/bge-base-en-v1.5',
+      batchedInput
+    );
+    const input = {
+      text: 'Tell me a joke about Cloudflare'
+    };
+    const response = await ai.run('@cf/baai/bge-base-en-v1.5', input);
+    return Response.json({ batchedInput, batchedResponse, input, response });
+  }
+};
+

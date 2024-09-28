@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="https://directory.zoho.com/p/824340061/app/547895000000002051/sso" validUntil="2026-08-19T07:22:50.742Z">
+    <md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:X509Data>
+<ds:X509Certificate>
+MIICkTCCAXkCBgGKDhE4YTANBgkqhkiG9w0BAQsFADAMMQowCAYDVQQDEwFBMB4XDTIzMDgxODEz&#13;
+NTIwNFoXDTI2MDgxODEzNTIwNFowDDEKMAgGA1UEAxMBQTCCASIwDQYJKoZIhvcNAQEBBQADggEP&#13;
+ADCCAQoCggEBAKSrBRJ4NLwbH7z9YSyT8JFf64eDLubB8R2KC9gUPhUD92iXpd4xJ2+0JPnoyKE6&#13;
+cYURWoRUQ97bT13PdzwC75Gk+deylsrgXDNDQtfuDJ7FfGmHopiTXwB+sz+7jOT1NukAJ+BE34DB&#13;
+CTUZmf3SDL3qc97l08U9cVEBarYuPTGhbizD4sgYZxaCHMNnKrMuman8vxBxJ7rdtJiN/Tl2Z41K&#13;
+9sQD59c1iWp8tfQprUOlk1Vh++f6Xdj9Zpuh7p5xFXAxAvpkhv5x6iA2CG9hsJZJ32HAh0BELccP&#13;
+QI8dLeJXTy3qj0r3yIjYRx7ept3I1JyMrryatv/URniYqDFmk80CAwEAATANBgkqhkiG9w0BAQsF&#13;
+AAOCAQEACCB4CgTLUFS5+eke+EGeOChnb1EdFEK8vAZvCX4sJsU3PTiZUNtBsrXcGuipySyOorJx&#13;
+hH9bSmUu+CsvKGG4Ayq2n8d/M/YVoSN9icfqPqFYdp9QhmT6mrfOqT0hQbRUdiAuzbbt+Q4Qibg3&#13;
+Npiq5QwxnIZnbJjJPeb6XNRhavSYIeB9HwGVRhu0ZbA0nTFy+wiKRXf38BYwZvTqa98rBNERueLl&#13;
+96BYnE8IVTebqSZB+WHWwmx6eCiaWg47r7gUjK4MdsN3deb/nImusCsoay4/gFJWSKtc/wf5a7mY&#13;
+U9eKSwafTN9k19OcHSJP1q1NxfJsSPZdhhEU7BNFW+qOlA==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://directory.zoho.com/p/824340061/app/547895000000002051/sso/logout"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://directory.zoho.com/p/824340061/app/547895000000002051/sso/logout"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://directory.zoho.com/p/824340061/app/547895000000002051/sso"/>
+        <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://directory.zoho.com/p/824340061/app/547895000000002051/sso"/>
+    </md:IDPSSODescriptor>
+</md:EntityDescriptor>

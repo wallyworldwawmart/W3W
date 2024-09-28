@@ -1,0 +1,1 @@
+wget -O ./aws-replication-installer-init.py https://aws-application-migration-service-eu-central-1.s3.eu-central-1.amazonaws.com/latest/linux/aws-replication-installer-init.py

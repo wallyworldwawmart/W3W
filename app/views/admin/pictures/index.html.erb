@@ -1,0 +1,41 @@
+<div class="add-image">
+    <%= link_to t('Добави снимка', :scope => [:partials, :pictures]),
+                new_admin_contact_sell_picture_path(:contact_id => @sell.contact.id, :sell_id => @sell.id),
+                :class => "add_picture nyroModal"
+    %>
+</div>
+
+<ul class='pictures'>
+    <% @pictures.each do |picture| %>
+        <%= render :partial => 'admin/pictures/picture', :locals => {:sell => @sell, :picture => picture } %>
+  <% end %>
+</ul>
+
+<div class="add-image">
+    <%= link_to t('Добави снимка', :scope => [:partials, :pictures]),
+                new_admin_contact_sell_picture_path(:contact_id => @sell.contact.id, :sell_id => @sell.id),
+                :class => "add_picture nyroModal"
+    %>
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        <% if @new_picture %>
+            var picture_content_for_list = '<%= escape_javascript( render :partial => 'picture', :locals => {:sell => @sell, :picture => @new_picture}) %>';
+            $(document).find('#picture-list').append(picture_content_for_list);
+        <% end %>
+
+        <% if @updated_picture %>
+            var picture_content_for_list = '<%= escape_javascript( render :partial => 'picture', :locals => {:sell => @sell, :picture => @updated_picture}) %>';
+            var picture_dom_id = '#<%= dom_id(@updated_picture)%>';
+            $(document).find('#picture-list').children(picture_dom_id).html(picture_content_for_list);
+            //$(document).find('#picture-list').children(picture_dom_id).replace(picture_content_for_list);
+        <% end %>
+          
+        <% if @destroy_picture.present? %>
+          var picture_dom_id = '#picture_' +  '<%= @destroy_picture %> '
+        <% end %>
+        
+        $('.nyroModal').nyroModal();
+    });
+</script>

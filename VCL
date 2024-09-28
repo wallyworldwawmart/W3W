@@ -1,0 +1,3 @@
+wfLoadExtension( 'VCL' );
+$wgMyExtensionConfigThis = 1;
+$wgMyExtensionConfigThat = false;

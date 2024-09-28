@@ -1,0 +1,3 @@
+brew tap appveyor/brew
+brew install appveyor-server
+brew services start appveyor-server

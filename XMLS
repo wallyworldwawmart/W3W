@@ -1,0 +1,3 @@
+gcloud asset search-all-iam-policies \
+  --scope='projects/6257065414' \
+  --order-by='resource'

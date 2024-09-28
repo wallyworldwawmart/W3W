@@ -1,0 +1,10 @@
+├── client
+│   ├── main.js       -> your Activity frontend
+│   ├── index.html
+│   ├── package.json
+|   |── rocket.png
+│   ├── vite.config.js
+├── server
+│   ├── package.json
+│   ├── server.js     -> your Activity backend
+└── .env              -> your credentials, ids and secrets

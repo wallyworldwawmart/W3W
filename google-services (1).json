@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "87309615086",
+    "project_id": "a-vcp-87833",
+    "storage_bucket": "a-vcp-87833.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87309615086:android:0938ecd844716359b498ff",
+        "android_client_info": {
+          "package_name": "com.wawmartllc.loanacct8043678088"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87309615086-4g6g5rvv8c50jg95noh1kdfen6n6tla2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJp2ZvXFf2RkPMROZU0GbpEqrorY-Y72I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87309615086-4g6g5rvv8c50jg95noh1kdfen6n6tla2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

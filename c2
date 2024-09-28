@@ -1,0 +1,16 @@
+public class Truck
+{
+	public TruckLoad createNewTruckLoad()
+	{
+		TruckLoad myTruckLoad = new TruckLoad();
+		return myTruckLoad;
+	}
+	public void shipTruckLoad(TruckLoad _truckLoad)
+	{
+		_truckLoad.ship();
+	}
+	public static int calcTotalWeight(int  netWeight,int tareWeight)
+	{
+		return netWeight+tareWeight;
+	}
+}

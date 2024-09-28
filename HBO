@@ -1,0 +1,5 @@
+public real ReturnCalculation(real _expression1)
+{
+	real expression2 = 2;
+	return _expression1 * expression2;
+}

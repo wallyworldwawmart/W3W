@@ -1,0 +1,11 @@
+curl -X POST https://messages-sandbox.nexmo.com/v1/messages \
+-u 'ae04cba3:oyc7q1rMqG6WLbI8' \
+-H 'Content-Type: application/json' \
+-H 'Accept: application/json' \
+-d '{
+    "from": "17841449184623529",
+    "to": "$IG_RECIPIENT_ID",
+    "message_type": "text",
+    "text": "This is a Instagram Message sent from the Messages API",
+    "channel": "instagram"
+  }'

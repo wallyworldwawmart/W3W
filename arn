@@ -1,0 +1,1 @@
+sudo python3 aws-replication-installer-init.py --region eu-central-1 --aws-access-key-id mgn-agent-installer --aws-secret-access-key KingKaram724!! --no-prompt

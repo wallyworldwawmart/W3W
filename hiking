@@ -1,0 +1,1 @@
+ adb shell pm grant com.hikapps.adl android.permission.WRITE_SECURE_SETTINGS
